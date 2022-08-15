@@ -22,34 +22,52 @@
       <div class="formulario">
         <div class="div-barra-progresso">
           <ul class="barra-de-progresso">
+            <li class="li-barra-progresso concluido">
+              <span class="span-concluido">SUAS INFORMAÇÕES</span>
+            </li>
             <li class="li-barra-progresso ativo">
-              SUAS INFORMAÇÕES
+              <span>INFORMAÇÕES DE PAGAMENTO</span>
             </li>
             <li class="li-barra-progresso">
-              INFORMAÇÕES DE PAGAMENTO
-            </li>
-            <li class="li-barra-progresso">
-              ACESSE A PLATAFORMA
+              <span>ACESSE A PLATAFORMA</span>
             </li>
           </ul>
         </div>
         <div class="formulario">
           <div class="input-formulario">
-            <label for="nome">NOME COMPLETO</label>
-            <input type="text" name="nome">
+            <label for="numCartao">NÚMERO DO CARTÃO</label>
+            <input type="text" name="numCartao">
           </div>
           <div class="input-formulario">
-            <label for="email">EMAIL</label>
-            <input type="text" name="email">
+            <label for="nomeCartao">NOME DO CARTÃO</label>
+            <input type="text" name="nomeCartao">
           </div>
           <div class="input-formulario-2">
             <div class="campos">
-              <label for="cpf">CPF</label>
-              <input type="text" name="cpf">
+              <label for="cvv">CVV</label>
+              <input type="text" name="cvv">
             </div>
             <div class="campos">
-              <label for="tel">TELEFONE COM DDD</label>
-              <input type="text" name="tel">
+              <label for="data">DATA DE EXPIRAÇÃO</label>
+              <input type="text" name="data" placeholder="MM/YYYY">
+            </div>
+            <div class="campos">
+              <label for="parcelas">PARCELAS</label>
+              <select name="parcelas" id="parcelas">
+                <option value="0">Número de parcelas</option>
+                <option value="1">1x</option>
+                <option value="2">2x</option>
+                <option value="3">3x</option>
+                <option value="4">4x</option>
+                <option value="5">5x</option>
+                <option value="6">6x</option>
+                <option value="7">7x</option>
+                <option value="8">8x</option>
+                <option value="9">9x</option>
+                <option value="10">10x</option>
+                <option value="11">11x</option>
+                <option value="12">12x</option>
+              </select>
             </div>
           </div>
           <div class="info">

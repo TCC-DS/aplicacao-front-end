@@ -66,6 +66,15 @@
   background-color: #898989;
 }
 
+.concluido::before {
+  color:white;
+  background-color: #5ad678;
+  content: "✓";
+}
+.span-concluido {
+  color: #5ad678;
+}
+
 .div-barra-progresso {
   display: flex;
   flex-direction: row;
@@ -100,15 +109,21 @@ width: 70%;
 .input-formulario-2{
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-input {
+input, select {
   border: 1px solid #dde4e8;
   border-radius: 3px;
   padding: 1rem;
+  width: 100%;
 }
+
+select{
+  color: #898989;
+}
+
 .info {
   display: flex;
 }
@@ -117,11 +132,35 @@ p > a {
   color: #898989;
 }
 
+.pagamento:hover {
+  cursor: pointer;
+}
+
 .pagamento {
   padding: 1.4rem;
   font-size: 1rem;
+  font-weight: 600;
 }
 
 .card {
   margin-top: 7rem;
+}
+
+.titulo-informacoes {
+  text-align: center;
+
+  padding: 1rem 0;
+
+  border-bottom: 1.5px solid ;
+  border-color: #c9c9c9;
+
+  width: 100%;
+}
+
+.card-titulo {
+  padding-top: .5rem;
+}
+
+.campos {
+  width: 100%;
 }
