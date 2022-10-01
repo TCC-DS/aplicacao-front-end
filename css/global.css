@@ -93,4 +93,9 @@ p{
     justify-content: center;
     align-items: center;
 }
+/* carrossel */
+#img{
+    width: 6rem;
+    height: 4rem;
+}
 
