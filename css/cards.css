@@ -23,7 +23,7 @@
 }
 .cifrao{
     position: absolute;
-    margin-left: -1rem;
+    margin-left: -1.5rem;
     font-size: 1rem;
 }
 
@@ -86,4 +86,13 @@
 .btn-effect:hover{
     color: #377dff;
     background-color: rgba(55,125,255,.1);
+}
+
+.card > p {
+    padding-top: 1rem;
+}
+
+.card-meio{
+    position: relative;
+    bottom: 1.5rem;
 }
