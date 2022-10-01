@@ -5,25 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
     <link href="css/global.css" rel="stylesheet" type="text/css" />
     <link href="css/cabecalho.css" rel="stylesheet" type="text/css" />
     <link href="css/cards.css" rel="stylesheet" type="text/css" />
-    <link href="css/index.css" rel="stylesheet" type="text/css" />
-
+    
+    
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
-        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
-        crossorigin="" />
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link href="css/carrossel.css" rel="stylesheet" type="text/css" />
+    <link href="teste.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
-        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
-        crossorigin=""></script>
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
     <script src='https://unpkg.com/leaflet-imageoverlay-ogcapi@0.1.0/Leaflet.ImageOverlay.OGCAPI.js'></script>
     <script src="http://unpkg.com/leaflet@latest/dist/leaflet.js"></script>
     <script src="js/leaflet-providers.js"></script>
-
     <script src="js/jquery.js"></script>
-
+    
 
     <title>Home</title>
 </head>
@@ -31,16 +33,138 @@
 <body>
     <header id="cabecalho"></header>
     <script>$("#cabecalho").load('cabecalho.html');</script>
-    <div id="map"></div>
+    <div class="div-titulo">
+        <div id="map"></div>
+        <div class="titulo-mapa">
+            <div class="h1">
+                <h1>Esta vendo o seu negocío ?</h1>
+            </div>
+        </div>
+    </div>
     <main class="container">
-        <div id="planos"></div>
-        <script>$("#planos").load('planos.html');</script>
+        <section class="sobre">
+            <article class="sobre-info">
+                <section class="sobre-titulo">
+                    <h1>O que fazemos ?</h1>
+                </section>
+                <section class="sobre-paragrafo">
+                    <p>
+                        Nós literalmente colocamos seu negocío no mapa, e fazemos da sua pequena e média empresa
+                        atraente aos olhos dos seus clientes.
+                    </p>
+                    <p>
+                        Nossa função é lhe auxilia-lo no marketing digital, fazendo o seu negocío mais tecnológico
+                        e visível a novos públicos.
+                    </p>
+                    <p>
+                        Imagine seus produtos disponível para qualquer um, a qualquer hora e em qualquer lugar,
+                        na facilidade de um click ?
+                    </p>
+                </section>
+                <a href="#" class="btn-comece-agora">Começe agora</a>
+            </article>
+            <div class="sobre-imgs">
+                <img class="sobre-imagem-1" src="./img/sobre1.jpg">
+                <img class="sobre-imagem-2" src="./img/sobre2.jpg">
+                <img class="sobre-imagem-3" src="./img/sobre3.jpg">
 
+            </div>
+        </section>
+        <div id="planos">
+            <script>$("#planos").load('planos.html');</script>
+        </div>
+        <div class="carrosel">
 
+            <div class="seta1">
+                <img class="adentro voltar" src="angle-left-solid.svg" alt="">
+            </div>
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+    
+                    <div class="swiper-slide" >
+                        <div id= "imagem" class="card1" > 
+                            <img id="img" class="img1 item" src="img/icons/Google.png" >  
+                        </div>               
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="imagem1" class="card1">
+                            <img id="img" class="img1 item" src="img/icons/gmail.png" >
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id= "imagem2" class="card1">
+                            <img id="img" class="img1 item" src="img/icons/facebook.png">
+                        </div>                
+                    </div>
+                    <div id= "imagem3" class="swiper-slide">
+                        <div class="card1">
+                            <img id="img" class="img1 item" src="img/icons/instagram.png">   
+                        </div>                
+                    </div>
+                    <div class="swiper-slide">
+                        <div id= "imagem4" class="card1">
+                            <img id="img" class="img1 item" src="img/icons/amazon.png" >   
+                        </div>               
+                    </div>
+                    <div class="swiper-slide">
+                        <div id= "imagem5" class="card1">
+                            <img id="img" class="img1 item" src="img/icons/mercadopago.png"> 
+                        </div>                
+                    </div>
+                    <div class="swiper-slide">
+                        <div id= "imagem6" class="card1">
+                            <img id="img" class="img1 item" src="img/icons/subway.png">
+                        </div> 
+                    </div>
+                    <div class="swiper-slide">
+                        <div id= "imagem7" class="card1">
+                            <img id="img" class="img1 item" src="img/icons/samsung.png">  
+                        </div>     
+                    </div>        
+                    <div class="swiper-slide">
+                        <div id= "imagem8" class="card1">
+                            <img id="img" class="img1 item" src="img/icons/youtube.png">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id= "imagem9" class="card1">
+                            <img id="img" class="img1 item" src="img/icons/kabum.png">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id= "imagem10" class="card1">
+                            <img id="img" class="img1 item" src="img/icons/itau.png">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id= "imagem11" class="card1">
+                            <img id="img" class="img1 item" src="img/icons/acer.png">
+                        </div>
+                    </div>
+                    
+                  </div>
+                   <!-- <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>  -->
+                  <div class="swiper-pagination"></div>
+                </div>  
+            <div class="seta2">
 
+                <div class="seta1">
+                    <img class="adentro2 next" src="angle-right-solid.svg" alt="">
+                </div>
+            </div>
+    
+         
+        </div>
     </main>
+    <div id="rodape">
+        <script>$("#rodape").load('rodape.html');</script>
+    </div>
+
     <script src="js/index.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/carrossel.js"></script>
 </body>
 
 </html>
